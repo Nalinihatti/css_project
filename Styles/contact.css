@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+
+}
+:root{
+    --urbn-main-font:'Montserrat',sans-serif;
+    --urbn-logo-font:'Cormorant Garamond' ,sans-serif;
+    --urbn-span-color: #ca1515;
+    --urbn-bold-color: #111111;
+    --urbn-light-color: #666666;
+
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+    margin-top: 100px;
+}.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: var(--urbn-bold-color);
+    color: #fff; 
+    padding: 2rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background-color: var(--urbn-span-color);
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 8px rgba(0,0,0,.1);
+}
+header .logo{
+    font-family: var(--urbn-logo-font);
+    color: var(--urbn-bold-color);
+    font-size: 5rem;
+    font-weight: bolder;
+}
+header .navbar a{
+    font-family: var(--urbn-main-font);
+    color: var(--urbn-bold-color);
+    font-size: 2rem;
+    padding: 0 1.5rem;
+
+}
+header .navbar a:hover{
+    border-bottom: 2px solid var(--urbn-span-color);
+    display: inline-block;
+    margin: 0 auto;
+}
+.icons a{
+    color: var(--urbn-bold-color);
+    font-size: 2rem;
+    padding: 0 1.5rem;
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: var(--urbn-bold-color);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+    border: 2px solid rgba(0,0,0,.3);
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.contact-info{
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+.contact-info span{
+    display: block;
+}
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contact-info span .fas{
+    font-size: 3rem;
+    padding-bottom: 0.9rem;
+    color: var(--urbn-span-color);
+}
+.contact-info div span{
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: var(--urbn-main-font);
+}
+.contact-info .text{
+    padding-top: 0.4rem;
+}
+
+.main-text{
+    height: 100px;
+    width: 1005;
+    margin-top: 100px;
+    text-align: center;
+    padding: 2.5rem;
+}
+.main-text h2{
+    font-family: var(--urbn-main-font);
+    font-size: 3rem;
+    color: var(--urbn-span-color);
+}
+.contact-form{
+    padding: 2rem 0;
+    border-top: 1px solid #c7c7c7;
+}
+.contact-form form{
+    padding-bottom: 1rem;
+}
+.form-control{
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: var(--urbn-main-font);
+    font-size: 1.5rem;
+    outline: 0;
+}
+.form-control:focus{
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+.send-btn{
+    font-family: var(--urbn-main-font);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--urbn-span-color);
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.send-btn:hover{
+    opacity: 0.8;
+}
+.contact-form > div img{
+    width: 85%;
+}
+.contact-form > div{
+    margin: 0 auto;
+    text-align: center;
+}
+.map iframe{
+    width: 100%;
+}
+
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+
+}
+.footer .box-container .box a{
+    display: block;
+    color: var(--urbn-light-color);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+
+}
+.footer .box-container .box a:hover{
+    color: var(--urbn-span-color);
+    text-decoration: underline;
+}
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--urbn-light-color);
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
+    .contact-bg .text{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    .contact-bg .text{
+        width: 50%;
+    }
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contact-info{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media (max-width:991px){
+    html{
+    font-size: 55%;
+}
+header{
+    padding: 2rem;
+} 
+section{
+    padding: 2rem;
+} 
+
+}
+
+@media (max-width:768px){
+    header .fa-bars{
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0,100% 0, 0 0);
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+       
+    }
+    
+
+@media (max-width:450px){
+    html{
+    font-size: 50%;
+    }
+}
